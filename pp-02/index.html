@@ -8,21 +8,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
   <link rel="stylesheet" href="screen.css"/>
 <body>
-<h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
   <header id="header">
+    <h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
     <nav id="navigation">
-      <!--Hint: Match navigation labels with memorable paths/URLs-->
-      <li><a href="home.html">Home</a></li>
-      <li><a href="../my-res/">Resume</a></li>
-      <li><a href="randomstuff/">Interests</a></li>
+      <ul>
+        <!--Hint: Match navigation labels with memorable paths/URLs-->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="resume/">Resume</a></li>
+        <li><a href="interests/">Interests</a></li>
+      </ul>
     </nav>
   </header>
   <!--Hint: Watch for duplicate and non-semantic classes and IDs-->
   <main id="home">
     <article id="primary" class="green-background">
-      <h2><b>About Me</b></h2>
-      <h3><i>3rd-Year ITM Undergraduate</i></h3>
-      <h4>Majoring in Cybersecurity</h4><br />
+      <h2>About Me</h2>
+      <h3>3rd-Year ITM Undergraduate</h3>
+      <h4>Majoring in Cybersecurity</h4>
       <!--Hint: Hard-wrap lines of text longer than 80–100 characters-->
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper risus eget magna suscipit, in blandit mauris aliquam. Donec ac elementum libero. Maecenas sit amet leo iaculis, pulvinar magna non, tristique justo. Sed iaculis odio nec suscipit malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
