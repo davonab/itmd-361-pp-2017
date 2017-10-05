@@ -27,26 +27,29 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 /* ==== LAYOUT STYLES ==== */
-#content {
-
+html {
+  box-sizing: border-box;
 }
-
+#content {
+  display: flex;
+  flex-direction: column;
+}
 #three,
 #two,
 #one {
 
 }
 
-#three {
-
+#one {
+  order: 1;
 }
 
 #two {
-
+ order: 2;
 }
 
-#one {
-
+#three {
+  order: 3;
 }
 
 @media screen and (min-width: 600px) {
