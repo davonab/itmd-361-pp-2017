@@ -32,7 +32,7 @@ html {
 }
 #content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 #three,
 #two,
@@ -47,9 +47,9 @@ html {
 }
 
 #two {
- order: 2;
- height: 10vw;
- width: 10vw;
+  order: 2;
+  height: 10vw;
+  width: 10vw;
 }
 
 #three {
@@ -59,9 +59,13 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+  }
 }
-
 @media screen and (min-width: 800px) {
 
 }
