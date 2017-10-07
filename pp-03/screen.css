@@ -82,4 +82,10 @@ html {
     height: 266.666667px;
     width: 800px;
   }
+  #one,
+  #two,
+  #three {
+    height: 266.666667px;
+    width: 266.666667px;
+  }
 }
