@@ -42,20 +42,20 @@ html {
 
 #one {
   order: 1;
-  height: 10vw;
-  width: 10vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 #two {
   order: 2;
-  height: 10vw;
-  width: 10vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 #three {
   order: 3;
-  height: 10vw;
-  width: 10vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 @media screen and (min-width: 600px) {
