@@ -32,7 +32,7 @@ html {
 }
 #content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 #three,
 #two,
@@ -62,6 +62,7 @@ html {
   #content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 600px;
     height: 300px;
   }
