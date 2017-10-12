@@ -42,20 +42,20 @@ html {
 
 #one {
   order: 1;
-  height: 35vw;
-  width: 35vw;
+  height: 25vh;
+  width: 25vw;
 }
 
 #two {
   order: 2;
-  height: 35vw;
-  width: 35vw;
+  height: 25vh;
+  width: 25vw;
 }
 
 #three {
   order: 3;
-  height: 35vw;
-  width: 35vw;
+  height: 25vh;
+  width: 25vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -63,30 +63,27 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 37.5em; /*600px;*/
-    height: 18.75em; /*300px;*/
   }
   #one,
   #two {
-    height: 18.75em; /*300px;*/
-    width: 18.75em; /*300px;*/
+    height: 50vh;
+    width: 50vw;
   }
   #three {
-    height: 37.5em; /*600px;*/
-    width: 37.5em; /*600px;*/
+    height: 100vw;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 800px) {
   #content {
     display: flex;
-    flex-direction: column;
-    height: 16.6666667em; /*266.666667px;*/
-    width: 50em; /*800px;*/
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   #one,
   #two,
   #three {
-    height: 16.6666667em; /*266.666667px;*/
-    width: 16.6666667em; /*266.666667px;*/
+    height: 50vh;
+    width: 50vw;
   }
 }
