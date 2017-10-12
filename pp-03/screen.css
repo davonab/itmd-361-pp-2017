@@ -63,30 +63,30 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 600px;
-    height: 300px;
+    width: 37.5em; /*600px;*/
+    height: 18.75em; /*300px;*/
   }
   #one,
   #two {
-    height: 300px;
-    width: 300px;
+    height: 18.75em; /*300px;*/
+    width: 18.75em; /*300px;*/
   }
   #three {
-    height: 600px;
-    width: 600px;
+    height: 37.5em; /*600px;*/
+    width: 37.5em; /*600px;*/
   }
 }
 @media screen and (min-width: 800px) {
   #content {
     display: flex;
     flex-direction: column;
-    height: 266.666667px;
-    width: 800px;
+    height: 16.6666667em; /*266.666667px;*/
+    width: 50em; /*800px;*/
   }
   #one,
   #two,
   #three {
-    height: 266.666667px;
-    width: 266.666667px;
+    height: 16.6666667em; /*266.666667px;*/
+    width: 16.6666667em; /*266.666667px;*/
   }
 }
