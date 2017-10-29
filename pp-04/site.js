@@ -5,10 +5,9 @@
 var x = 5;
 
 function double(num) {
-    var x = num * 2;
+  var x = num * 2;
   return x;
 }
-
 double(6);
 console.log('The value of x is:', x, 'It should be 5.');
 
@@ -30,15 +29,19 @@ function arrayEach(array, func) {
 }
 arrayEach(['red','green','blue'], console.log);
 
-console.log(window.i) // should be 'undefined', not 3
+console.log(window.i); // should be 'undefined', not 3
 
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
 
+//this function does not modify the x variable because "console.log(addTwo(4));"
+//should be "console.log(addTwo(x));" instead it's adding 2 to 4 and not x which
+//is 5
 function addTwo(x) {
-  x = x + 2;
-  return x;
+   x = x + 2;
+   return x;
+
 }
 
 console.log(addTwo(4)); // 6
