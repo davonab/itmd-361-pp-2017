@@ -22,7 +22,7 @@ console.log('The value of x is:', window.x, 'It should be 5.');
   }
 }) ();
 //it will print undefined because the d variable is not global
-console.log('The value of y:', window.d);
+console.log('The value of d:', window.d);
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
