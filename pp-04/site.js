@@ -1,22 +1,28 @@
 //  1. Correct the variable scope so that the console.log call
 //  outputs the correct value for x (5) even after double(6) is
 //  called:
-
-var x = 5;
-
+  var x = 5;
 function double(num) {
   var x = num * 2;
   return x;
 }
 double(6);
-console.log('The value of x is:', x, 'It should be 5.');
+console.log('The value of x is:', window.x, 'It should be 5.');
 
 //  2. Rewrite the corrected JavaScript above as a self-executing
 //  anonymous function that does not pollute the global
 //  namespace (e.g., neither its variables nor the double
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
-
+(function anonymous() {
+  var d = 5;
+    function double(num) {
+    var d = num * 2;
+    return d;
+  }
+}) ();
+//it will print undefined because the d variable is not global
+console.log('The value of y:', window.d);
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
@@ -36,8 +42,7 @@ console.log(window.i); // should be 'undefined', not 3
 //  as JavaScript comments.
 
 //this function does not modify the x variable because "console.log(addTwo(4));"
-//should be "console.log(addTwo(x));" instead it's adding 2 to 4 and not x which
-//is 5
+//should be "console.log(addTwo(x));" instead it's adding 2 to 4 and not x=5
 function addTwo(x) {
    x = x + 2;
    return x;
