@@ -35,7 +35,7 @@ function arrayEach(array, func) {
 }
 arrayEach(['red','green','blue'], console.log);
 
-console.log(window.i); // should be 'undefined', not 3
+console.log(typeof(i)); // should be 'undefined', not 3
 
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
@@ -43,6 +43,7 @@ console.log(window.i); // should be 'undefined', not 3
 
 //this function does not modify the x variable because "console.log(addTwo(4));"
 //should be "console.log(addTwo(x));" instead it's adding 2 to 4 and not x=5
+//also x is an argument passed, therefore it will only be local to the function.
 function addTwo(x) {
    x = x + 2;
    return x;
