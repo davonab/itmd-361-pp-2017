@@ -15,7 +15,7 @@ console.log('The value of x is:', window.x, 'It should be 5.');
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
 
-(function anonymous() {
+(function () {
   var d = 5;
     function double(num) {
     var d = num * 2;
