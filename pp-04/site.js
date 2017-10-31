@@ -15,6 +15,21 @@ console.log('The value of x is:', window.x, 'It should be 5.');
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
 
+(function anonymous() {
+  var d = 5;
+    function double(num) {
+    var d = num * 2;
+    return d;
+  }
+  //inside the scope
+  console.log('The value of d is:', d, 'It should be 5.');
+}) ();
+double(6);
+//outside the scope
+//it will print undefined because the d variable is not global
+console.log('The value of d:', window.d);
+
+
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
 
