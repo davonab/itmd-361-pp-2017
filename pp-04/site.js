@@ -14,15 +14,6 @@ console.log('The value of x is:', window.x, 'It should be 5.');
 //  namespace (e.g., neither its variables nor the double
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
-(function anonymous() {
-  var d = 5;
-    function double(num) {
-    var d = num * 2;
-    return d;
-  }
-}) ();
-//it will print undefined because the d variable is not global
-console.log('The value of d:', window.d);
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
@@ -41,9 +32,8 @@ console.log(typeof(i)); // should be 'undefined', not 3
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
 
-//this function does not modify the x variable because "console.log(addTwo(4));"
-//should be "console.log(addTwo(x));" instead it's adding 2 to 4 and not x=5
-//also x is an argument passed, therefore it will only be local to the function.
+//EXPLANATION: x is an argument passed to the function,
+//therefore it will only be local to the function and not affect the global x.
 function addTwo(x) {
    x = x + 2;
    return x;
