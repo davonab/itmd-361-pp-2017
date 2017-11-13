@@ -24,6 +24,13 @@ body {
   cursor: pointer;
   position: absolute;
 }
+#ring-doorbell:hover {
+  background-color: blue;
+  color: white;
+}
+#doorbell {
+  margin-top: 15px;
+}
 
 /* ===== MODULAR STYLES ===== */
 
