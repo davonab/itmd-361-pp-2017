@@ -19,7 +19,11 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
-
+#doorbell-ring{
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+}
 
 /* ===== MODULAR STYLES ===== */
 
